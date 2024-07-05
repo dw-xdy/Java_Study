@@ -20,6 +20,5 @@ public class input_13 {
         System.out.println("人的信息如下:");
         System.out.println("名字=" + name
                 + " 年龄=" + age + " 薪水=" + sal);
-
     }
 }

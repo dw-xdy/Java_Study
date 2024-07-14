@@ -1,6 +1,9 @@
 package com.fxw.extend_;
 
-public class Base {
+import com.fxw.extend_.improve_.TopBase;
+import com.fxw.modifier.B;
+
+public class Base extends TopBase {
     //4个属性
     public int n1 = 100;
     protected int n2 = 200;
@@ -10,17 +13,16 @@ public class Base {
 
     // 父类构造器
     public Base() { //无参构造器
-        System.out.println("父类Base()构造器被调用....");
-    }
-    public Base(String name) {//有参构造器
-        System.out.println("父类Base(String name)构造器被调用....");
-    }
-    public Base(String name, int age) {//有参构造器
-        //默认super()
-        System.out.println("父类Base(String name, int age)构造器被调用....");
+        System.out.println("父类的Base()构造器...被调用");
     }
 
+    public Base(String name) {
+        System.out.println("父类的Base(String name)构造器...被调用");
+    }
 
+    public Base(String name, int age) {
+        System.out.println("父类的Base(String name, int age)构造器...被调用");
+    }
 
 
     //父类提供一个public的方法,返回了n4
@@ -31,17 +33,21 @@ public class Base {
     public void test100() {
         System.out.println("test100");
     }
+
     protected void test200() {
         System.out.println("test200");
     }
+
     void test300() {
         System.out.println("test300");
     }
+
     private void test400() {
         System.out.println("test400");
     }
-    //call
+
     public void callTest400() {
         test400();
     }
+
 }

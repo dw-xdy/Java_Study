@@ -4,14 +4,17 @@ public class Sub extends Base {
 
     //子类本身的构造器
     public Sub() {
-        System.out.println("sub()....");
+        super("kaishi", 28);
+        System.out.println("子类的Sub()构造器被调用");
     }
     public Sub(String name) {
-        System.out.println("sub+++++++++++++++++++++++++++++");
+        super("Tom", 19);
+        System.out.println("子类的Sub(String name)构造器被调用");
     }
+
     public Sub(String name, int age) {
-        super("xiaoming", 37);
-        System.out.println("sub+++++++++++++++++++++++++++++");
+        super("king");
+        System.out.println("子类的Sub(String name, int age)构造器被调用");
     }
 
 

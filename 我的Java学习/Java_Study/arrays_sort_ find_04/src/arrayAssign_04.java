@@ -48,7 +48,6 @@ public class arrayAssign_04 {
 //        要求数据空间是独立的.
 
         int[] arr1 = {10,20,30};
-
         //创建一个新的数组arr2,开辟新的数据空间
         //大小 arr1.length;
         int[] arr2 = new int[arr1.length];

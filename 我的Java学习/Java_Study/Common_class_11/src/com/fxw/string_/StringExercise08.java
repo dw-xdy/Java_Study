@@ -15,5 +15,9 @@ public class StringExercise08 {
         //4. String c= sb.toString()
         //最后其实是 c 指向堆中的对象(String) value[] -> 池中 "helloabc"
         String c = a + b;
+        String d = "helloabc";
+        System.out.println(c == d);//真还是假? 是false
+        String e = "hello" + "abc";//直接看池， e指向常量池
+        System.out.println(d == e);//真还是假? 是true
     }
 }
